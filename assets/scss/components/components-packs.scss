@@ -1,0 +1,37 @@
+@import 'image-resize';
+@import 'titles';
+@import 'form-fields';
+@import 'buttons';
+@import 'local-card';
+@import 'places-slider';
+@import 'local-item-card';
+@import 'checkbox-field';
+@import 'product-modal';
+
+
+.cat-col{
+    padding: 22px;
+    position: sticky;
+    top: 85px;
+    .checkbox-field{
+        &:last-child{
+            border-bottom: 1px solid #ddd;
+        }
+    }
+}
+
+.local-items-grid{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.mib-select{
+    // appearance: none;
+    background: #fff;
+    height: 46px;
+    border: none;
+    min-width: 200px;
+    padding: 2px 12px;
+    border-radius: 6px;
+}

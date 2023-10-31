@@ -1,0 +1,32 @@
+.mib-btn{
+    height: 48px;
+    line-height: 1;
+    &.primary{
+        padding: 12px 24px;
+        background: $primary;
+        color: #fff;
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+}
+
+.google-btn{
+    line-height: 1;
+        padding: 12px 24px;
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: 600;
+        height: 48px;
+        border: 1px solid #aaa;
+}
+
+.or{
+    justify-content: space-between;
+    margin-bottom: 0;
+    &:before, &:after{
+        content: "";
+        width: 42%;
+        border-bottom: 1px solid #aaa;
+    }
+}

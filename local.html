@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local</title>
+    <link rel="stylesheet" href="custom.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.24/dist/carousel/carousel.thumbs.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  </head>
+  <body>
+    <header class="py-2 position-fixed">
+      <div class="container">
+        <nav class="center-vertical justify-content-between">
+          <div class="center-vertical">
+            <button class="p-2 rounded-3 bg-white">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-menu-2"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#2c3e50"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M4 6l16 0" />
+                <path d="M4 12l16 0" />
+                <path d="M4 18l16 0" />
+              </svg>
+            </button>
+            <a href="index.html" class="ms-2 img-contain d-flex logo">
+              <img src="media/images/logo-mibarrio-blanco.png" alt="" />
+            </a>
+          </div>
+          <form
+            action="aa"
+            class="position-relative center-vertical justify-content-between ps-3 pe-1"
+          >
+            <div>
+              <button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-search"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#2c3e50"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                  <path d="M21 21l-6 -6" />
+                </svg>
+              </button>
+              <input
+                class="position-absolute border-0 h-100 w-100 bg-white rounded-4 ps-5"
+                type="search"
+                placeholder="¿Qué estás buscando?"
+                inputmode="search"
+              />
+            </div>
+            <button type="button" class="bg-body-secondary rounded-4 p-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-adjustments"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#2c3e50"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M4 10a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                <path d="M6 4v4" />
+                <path d="M6 12v8" />
+                <path d="M10 16a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                <path d="M12 4v10" />
+                <path d="M12 18v2" />
+                <path d="M16 7a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                <path d="M18 4v1" />
+                <path d="M18 9v11" />
+              </svg>
+            </button>
+          </form>
+          <div class="center-vertical">
+            <div class="text-end me-3 text-white lh-2">
+              <span>Ubicación</span>
+              <p class="mb-0 fw-medium">Calle 35#89-08</p>
+            </div>
+            <button class="rounded-pill center-all p-2 border border-light">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-shopping-cart"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#fff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                <path d="M17 17h-11v-14h-2" />
+                <path d="M6 5l14 1l-1 7h-13" />
+              </svg>
+            </button>
+            <button
+              class="rounded-pill center-all ms-2 p-2 border border-light"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-user"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#fff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+              </svg>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="local-banner p-0">
+        <div class="container position-relative d-flex">
+          <a href="#" class="position-absolute back bg-white center-all rounded-3 fw-bold">
+            <svg xmlns="http://www.w3.org/2000/svg" class="me-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M5 12l14 0" />
+            <path d="M5 12l6 6" />
+            <path d="M5 12l6 -6" />
+          </svg>Ir atrás</a>
+          <div class="img-fit overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1502056247561-73539df36440?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+              alt=""
+            />
+          </div>
+          <div class="local-poster-container position-absolute">
+            <div class="local-poster bg-white">
+              <div class="center-vertical justify-content-between">
+                <h1 class="page-title">Surtimax</h1>
+                <div class="center-vertical">
+                  <div class="center-vertical me-2">
+                    <button class="fav-btn border rounded-5 center-all p-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-heart"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                          d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+                        />
+                      </svg>
+                    </button>
+                    <button
+                      class="fav-btn border rounded-5 center-all p-2 ms-2"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-phone-call"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="#2c3e50"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                          d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"
+                        />
+                        <path d="M15 7a2 2 0 0 1 2 2" />
+                        <path d="M15 3a6 6 0 0 1 6 6" />
+                      </svg>
+                    </button>
+                  </div>
+                  <button class="local-state open ms-2">Abierto</button>
+                </div>
+              </div>
+              <hr />
+              <div class="row">
+                <p class="center-vertical col-md-4 mb-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star-filled me-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" stroke-width="0" fill="currentColor" />
+                  </svg>
+                  2:00pm - 11:00 pm
+                </p>
+                <p class="center-vertical col-md-4 mb-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin me-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                    <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                  </svg>
+                  2:00pm - 11:00 pm
+                </p>
+                <p class="center-vertical col-md-4 mb-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone me-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                  </svg>
+                  2:00pm - 11:00 pm
+                </p>
+                <p class="center-vertical col-md-4 mb-0">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-calendar-event me-2"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M4 5m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"
+                    />
+                    <path d="M16 3l0 4" />
+                    <path d="M8 3l0 4" />
+                    <path d="M4 11l16 0" />
+                    <path d="M8 15h2v2h-2z" />
+                  </svg>
+                  2:00pm - 11:00 pm
+                </p>
+                <p class="center-vertical col-md-4 mb-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock-hour-3 me-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                    <path d="M12 12h3.5" />
+                    <path d="M12 7v5" />
+                  </svg>
+                  2:00pm - 11:00 pm
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 pe-4">
+              <div class="bg-white cat-col rounded-4">
+                <p class="text-center section-subtitle">Categorías</p>
+
+                <div class="checkbox-field center-vertical">
+                  <input type="checkbox" id="frutas" />
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check" width="20" height="20" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M5 12l5 5l10 -10" />
+                  </svg>
+                  <label for="frutas">Frutas y verduras</label>
+                </div>
+                <div class="checkbox-field center-vertical">
+                  <input type="checkbox" id="some" />
+                  <label for="some">Example really long text as placeholder</label>
+                </div>
+                <div class="checkbox-field center-vertical">
+                  <input type="checkbox" id="some" />
+                  <label for="some">Example really long text as placeholder</label>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <div class="mb-3 center-vertical justify-content-between">
+                <h5 class="fw-bold mb-0">Todos los productos</h5>
+                <div>
+                  <span class="fw-bold me-3">Ordenar por</span>
+                  <select name="" id="" class="mib-select rounded-3">
+                    <option value="">Recientes</option>
+                    <option value="">Más antiguos</option>
+                    <option value="">Mayor precio</option>
+                    <option value="">Menor precio</option>
+                  </select>
+                </div>
+              </div>
+              <div class="local-items-grid">
+              <div class="local-item-card bg-white p-3 rounded-4">
+                <button data-fancybox data-src="#product-modal" class="img-contain border d-flex rounded-4">
+                  <img
+                    src="media/images/producto.webp"
+                    class="rounded-4"
+                    alt="Alimento gato salmon y cordero CHUNKY 1500 gr"
+                  />
+                </button>
+                <p class="fw-bold mb-0">$27.900</p>
+                <h2
+                  class="mb-3"
+                  title="Alimento gato salmon y cordero CHUNKY 1500 gr"
+                >
+                  Alimento gato salmon y cordero CHUNKY 1500 gr
+                </h2>
+                <div
+                  class="center-all add-group rounded-4 position-relative overflow-hidden"
+                >
+                  <button class="mib-btn add-btn fw-semibold w-100">
+                    Añadir al pedido
+                  </button>
+                  <div class="center-all item-counter position-absolute h-100">
+                    <button class="minus rounded-3">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-minus"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M5 12l14 0" />
+                      </svg>
+                    </button>
+                    <input
+                      type="text"
+                      number
+                      readonly
+                      value="01"
+                      class="border-0 rounded-3 text-center w-100 h-100"
+                    />
+                    <button class="plus rounded-3">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-plus"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M12 5l0 14" />
+                        <path d="M5 12l14 0" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="local-item-card bg-white p-3 rounded-4">
+                <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="img-contain border d-flex rounded-4">
+                  <img
+                    src="media/images/producto.webp"
+                    class="rounded-4"
+                    alt="Alimento gato salmon y cordero CHUNKY 1500 gr"
+                  />
+                </button>
+                <p class="fw-bold mb-0">$27.900</p>
+                <h2
+                  class="mb-3"
+                  title="Alimento gato salmon y cordero CHUNKY 1500 gr"
+                >
+                  Alimento gato salmon y cordero CHUNKY 1500 gr
+                </h2>
+                <div
+                  class="center-all add-group rounded-4 position-relative overflow-hidden"
+                >
+                  <button class="mib-btn add-btn fw-semibold w-100">
+                    Añadir al pedido
+                  </button>
+                  <div class="center-all item-counter position-absolute h-100">
+                    <button class="minus rounded-3">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-minus"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M5 12l14 0" />
+                      </svg>
+                    </button>
+                    <input
+                      type="text"
+                      number
+                      readonly
+                      value="01"
+                      class="border-0 rounded-3 text-center w-100 h-100"
+                    />
+                    <button class="plus rounded-3">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-plus"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M12 5l0 14" />
+                        <path d="M5 12l14 0" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div id="product-modal" style="max-width:1200px;" class="rounded-4">
+      <div class="container p-0">
+        <div class="row">
+          <div class="col-md-6">
+            <div id="productCarousel" class="f-carousel">
+          <div class="f-carousel__slide img-contain border rounded-4" data-thumb-src="media/images/producto.webp" data-fancybox="gallery" data-src="media/images/producto.webp">
+              <img alt="" width="1600" height="1067" data-lazy-src="media/images/producto.webp" />
+          </div>
+          <div class="f-carousel__slide img-contain border rounded-4" data-thumb-src="media/images/producto-2.webp" data-fancybox="gallery" data-src="media/images/producto-2.webp">
+              <img alt="" width="1600" height="1067" data-lazy-src="media/images/producto-2.webp" />
+          </div>
+          <div class="f-carousel__slide img-contain border rounded-4" data-thumb-src="media/images/producto-3.webp" data-fancybox="gallery" data-src="media/images/producto-3.webp">
+            <img alt="" width="1600" height="1067" data-lazy-src="media/images/producto-3.webp" />
+        </div>
+         
+      </div>
+          </div>
+          <div class="col-md-6">
+            <div class="ps-3 d-flex flex-column h-100">
+              <div>
+                <h2 class="section-title mb-4">Surtimax el mejor de la vida</h2>
+                <div class="mb-3">
+                  <strong>Información del producto</strong>
+                  <p>Lomo marinado con tahini, pepino encurtido, cebolla, tomate, perejil, sumac, menta y servido con pan libanés</p>
+                </div>
+                <div class="mb-3">
+                  <strong>Información del producto</strong>
+                  <p>Lomo marinado con tahini, pepino encurtido, cebolla, tomate, perejil, sumac, menta y servido con pan libanés</p>
+                </div>
+              </div>
+              <div class="mt-auto">
+                <div>
+                  <div class="center-vertical justify-content-between mb-3">
+                    <div>
+                      <span class="discount fw-bold">$8.000</span>
+                      <p class="price mb-0 fw-bold">$12.000</p>
+                    </div>
+                    
+                    <div class="product-amount center-all rounded-2">
+                        <button class="p-2 rounded-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus" width="26" height="26" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M5 12l14 0" />
+                            </svg>
+                        </button>
+                        <input type="text" value="01" readonly class="text-center h-100" />
+                        <button class="p-2 rounded-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plus" width="26" height="26" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M12 5l0 14" />
+                                <path d="M5 12l14 0" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                </div>
+                <button class="mib-btn primary w-100">
+                  Añadir al pedido
+                 </button>
+              </div>
+              
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.24/dist/carousel/carousel.thumbs.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
+  <script>
+    Fancybox.bind('[data-fancybox]', {
+      
+        // Custom options for all galleries
+      });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+</html>

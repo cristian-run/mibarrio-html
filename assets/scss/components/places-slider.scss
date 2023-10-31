@@ -1,0 +1,25 @@
+.places-slider {
+}
+
+.places-arrows {
+  button {
+    z-index: 2;
+    transition: all 0.08s;
+    &.swiper-button-disabled {
+      background: #ddd !important;
+    }
+    &:not(.swiper-button-disabled) {
+      &:active {
+        transform: scale(0.9);
+      }
+    }
+  }
+}
+
+
+.cat-card{
+    font-size: 14px;
+    .img-fit{
+        aspect-ratio: 2/2;
+    }
+}

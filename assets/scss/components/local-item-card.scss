@@ -1,0 +1,70 @@
+.local-item-card {
+    transition: all 0.3s;
+  p {
+    font-size: 22px;
+  }
+  .img-contain {
+    margin-bottom: 12px;
+  }
+  h2 {
+    font-size: 16px;
+    font-weight: 500;
+    @include text-line-1;
+  }
+  .add-group {
+    border: 1px solid $primary;
+    transition: all 0.2s;
+    &:hover{
+        background: rgba($primary, 0.05);
+    }
+    .mib-btn{
+        color: $primary;
+        z-index: 2;
+        transition: all 0.2s;
+        position: relative;
+        &:hover{
+            opacity: 1;
+            background: rgba($primary, 0.1);
+        }
+    }
+    .item-counter{
+        z-index: 1;
+        padding: 5px 8px;
+        opacity: 0;
+        transition: all 0.3s 0s;
+        // transform: scale(0.2);
+        button{
+            min-width: 46px;
+            min-height: 35px;
+            color: #fff;
+            transition: all 0.2s;
+            &:hover{
+                background: rgba(34, 34, 34, 0.2);
+            }
+            &:active{
+                background: rgba(34, 34, 34, 0.35);
+            }
+        }
+        input{
+            margin: 0 15px;
+        }
+    }
+    &.added{
+        background: $primary;
+        .item-counter{
+            // transform: scale(1);
+            opacity: 1;
+            transition: all 0.3s 0.1s;
+        }
+        .mib-btn{
+            transition: all 0.2s;
+            opacity: 0;
+             transform: translateY(100%);
+        }
+        
+    }
+  }
+  &:hover{
+    box-shadow: 0 10px 30px rgba(34, 34, 34, 0.15);
+  }
+}

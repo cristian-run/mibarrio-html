@@ -1,0 +1,33 @@
+.checkbox-field{
+    padding: 12px 0;
+    border-top: 1px solid #ddd;
+    position: relative;
+    input{
+        appearance: none;
+        min-width: 24px;
+        width: 24px;
+        height: 24px;
+        border: 1px solid #CCCCCC;
+        border-radius: 5px;
+        margin-right: 12px;
+        &:checked{
+            background: $primary;
+            border-color: $primary;
+            + svg{
+                opacity: 1;
+            }
+        }
+    }
+    svg{
+        position: absolute;
+        left: 2px;
+        opacity: 0;
+        color: #fff;
+    }
+    label{
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 600;
+        @include text-line-1;
+    }
+}

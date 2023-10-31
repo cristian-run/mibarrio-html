@@ -1,0 +1,28 @@
+.form_field {
+  display: flex;
+  flex-direction: column-reverse;
+  label {
+    font-size: 17px;
+    position: relative;
+  }
+  input {
+    height: 46px;
+    border: 1px solid #dddddd;
+    &::placeholder{
+        color: #8E8E8E;
+    }
+    &:required {
+      + label {
+        display: flex;
+        justify-content: space-between;
+        &::after {
+          content: "Requerido *";
+          right: 0;
+          font-size: 15px;
+          font-weight: 400;
+          color: #767676;
+        }
+      }
+    }
+  }
+}

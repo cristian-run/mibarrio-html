@@ -1,0 +1,64 @@
+.local-card{
+    .img-fit{
+        height: 200px;
+        img{
+           transition: all 0.5s ease;
+           will-change: transform;
+        }
+    }
+    .local-info{
+        padding: 16px 20px;
+        font-size: 15px;
+        margin-top: -20px;
+        z-index: 1;
+        .details{
+            color: #8F8F8F;
+            span{
+                width: 100%;
+                @include center-all;
+                svg{
+                    color: #585858;
+                }
+               &:not(:last-child){
+                &:after{
+                    content: "";
+                    height: 18px;
+                    position: absolute;
+                    right: 0;
+                    border-left: 1px solid #585858;
+                }
+               }
+            }
+        }
+        h3{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .fav-btn{
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            right: 20px;
+            position: absolute;
+            top: -12px;
+            filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.18));
+            transition: all 0.05s ease;
+            input:checked{
+                + svg{
+                    color: $primary;
+                    fill:$primary;
+                }
+            }
+            &:active{
+                transform: scale(0.8);
+            }
+        }
+    }
+   &:hover{
+    .img-fit{
+        img{
+            transform: scale(1.08);
+        }
+    }
+   }
+}

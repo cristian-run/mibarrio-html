@@ -1,0 +1,23 @@
+.banner-home{
+    padding-top: 30px;
+    .swiper-slide a{
+        height: 250px;
+    }
+}
+
+.banner-arrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    transition: all 0.1s;
+    &.prev{
+        left: -8px;
+    }
+    &.next{
+        right: -8px;
+    }
+    &:active{
+        transform: translateY(-50%) scale(0.9);
+    }
+}

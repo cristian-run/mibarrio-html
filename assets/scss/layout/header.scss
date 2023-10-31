@@ -1,0 +1,22 @@
+header {
+  background: $primary;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+  nav{
+    .logo{
+        height: 56px;
+    }
+  }
+  form{
+    width: 100%;
+    max-width: 560px;
+    height: 50px;
+    z-index: 1;
+    input{
+        left: 0;
+        top: 0;
+        z-index: -1;
+    }
+  }
+}

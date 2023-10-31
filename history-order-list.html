@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local</title>
+    <link rel="stylesheet" href="custom.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="py-2 position-fixed">
+      <div class="container">
+        <nav class="center-vertical justify-content-between">
+          <div class="center-vertical">
+            <button class="p-2 rounded-3 bg-white">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-menu-2"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#2c3e50"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M4 6l16 0" />
+                <path d="M4 12l16 0" />
+                <path d="M4 18l16 0" />
+              </svg>
+            </button>
+            <a href="index.html" class="ms-2 img-contain d-flex logo">
+              <img src="media/images/logo-mibarrio-blanco.png" alt="" />
+            </a>
+          </div>
+          <form
+            action="aa"
+            class="position-relative center-vertical justify-content-between ps-3 pe-1"
+          >
+            <div>
+              <button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-search"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#2c3e50"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                  <path d="M21 21l-6 -6" />
+                </svg>
+              </button>
+              <input
+                class="position-absolute border-0 h-100 w-100 bg-white rounded-4 ps-5"
+                type="search"
+                placeholder="¿Qué estás buscando?"
+                inputmode="search"
+              />
+            </div>
+            <button type="button" class="bg-body-secondary rounded-4 p-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-adjustments"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#2c3e50"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M4 10a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                <path d="M6 4v4" />
+                <path d="M6 12v8" />
+                <path d="M10 16a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                <path d="M12 4v10" />
+                <path d="M12 18v2" />
+                <path d="M16 7a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                <path d="M18 4v1" />
+                <path d="M18 9v11" />
+              </svg>
+            </button>
+          </form>
+          <div class="center-vertical">
+            <div class="text-end me-3 text-white lh-2">
+              <span>Ubicación</span>
+              <p class="mb-0 fw-medium">Calle 35#89-08</p>
+            </div>
+            <button class="rounded-pill center-all p-2 border border-light">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-shopping-cart"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#fff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                <path d="M17 17h-11v-14h-2" />
+                <path d="M6 5l14 1l-1 7h-13" />
+              </svg>
+            </button>
+            <button
+              class="rounded-pill center-all ms-2 p-2 border border-light"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-user"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#fff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+              </svg>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="orders-history">
+        <div class="container">
+          <div class="center-vertical justify-content-between mb-4">
+            <h4 class="page-title ">Lista de pedidos</h4>
+            <div>
+              <span class="fw-bold me-3">Ordenar por</span>
+              <select name="" id="" class="mib-select rounded-3">
+                <option value="">Recientes</option>
+                <option value="">Más antiguos</option>
+                <option value="">Mayor precio</option>
+                <option value="">Menor precio</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="order-container rounded-4 border border-secondary-subtle mb-4">
+            <div class="order-header d-grid align-items-center rounded-4 bg-white">
+              <div>
+                <p>ID de la orden</p>
+                <span>AB48616</span>
+              </div>
+              <div>
+                <p>Fecha</p>
+                <span>AB48616</span>
+              </div>
+              <div>
+                <p>Local</p>
+                <span>AB48616</span>
+              </div>
+              <div>
+                <p>Costo total</p>
+                <span>AB48616</span>
+              </div>
+              <div>
+                <button class="d-flex bg-body-secondary rounded-pill ms-auto expand-order-details">
+                  <p class="mb-0 p-2 px-3">4 items</p>
+                  <div
+                    class="bg-white rounded-pill p-2 border border-secondary"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-chevron-down"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="#2c3e50"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M6 9l6 6l6 -6" />
+                    </svg>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div class="order-sumary-container ">
+              <div class="row p-4 m-0">
+                <div class="col-md-10 m-auto">
+                  <div class="order-sumary">
+                    <div class="order-sumary-head d-grid px-3">
+                      <p>Producto</p>
+                      <p>Precio</p>
+                      <p>Cantidad</p>
+                      <p>Subtotal</p>
+                    </div>
+                    <div
+                      class="order-item-container d-grid bg-white rounded-4 mb-3"
+                    >
+                      <div class="order-item center-vertical">
+                        <div
+                          class="img-contain rounded-4 border overflow-hidden me-3"
+                        >
+                          <img src="media/images/producto.webp" alt="" />
+                        </div>
+                        <div>
+                          <h6 class="mb-1">Surtimax es el mejor de la vida</h6>
+                          <p class="mb-0">Some variations for this item</p>
+                        </div>
+                      </div>
+                      <p class="fw-bold">$10.000</p>
+                      <p>01</p>
+                      <p class="fw-bold">$12.000</p>
+                    </div>
+                    <div class="order-item-container d-grid bg-white rounded-4">
+                      <div class="order-item center-vertical">
+                        <div
+                          class="img-contain rounded-4 border overflow-hidden me-3"
+                        >
+                          <img src="media/images/producto.webp" alt="" />
+                        </div>
+                        <div>
+                          <h6 class="mb-1">Surtimax es el mejor de la vida</h6>
+                          <p class="mb-0">Some variations for this item</p>
+                        </div>
+                      </div>
+                      <p class="fw-bold">$10.000</p>
+                      <p>01</p>
+                      <p class="fw-bold">$12.000</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="order-container rounded-4 border border-secondary-subtle mb-4">
+            <div class="order-header d-grid align-items-center rounded-4 bg-white">
+              <div>
+                <p>ID de la orden</p>
+                <span>AB48616</span>
+              </div>
+              <div>
+                <p>Fecha</p>
+                <span>AB48616</span>
+              </div>
+              <div>
+                <p>Local</p>
+                <span>AB48616</span>
+              </div>
+              <div>
+                <p>Costo total</p>
+                <span>AB48616</span>
+              </div>
+              <div>
+                <button class="d-flex bg-body-secondary rounded-pill ms-auto expand-order-details">
+                  <p class="mb-0 p-2 px-3">4 items</p>
+                  <div
+                    class="bg-white rounded-pill p-2 border border-secondary"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-chevron-down"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="#2c3e50"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M6 9l6 6l6 -6" />
+                    </svg>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div class="order-sumary-container ">
+              <div class="row p-4 m-0">
+                <div class="col-md-10 m-auto">
+                  <div class="order-sumary">
+                    <div class="order-sumary-head d-grid px-3">
+                      <p>Producto</p>
+                      <p>Precio</p>
+                      <p>Cantidad</p>
+                      <p>Subtotal</p>
+                    </div>
+                    <div
+                      class="order-item-container d-grid bg-white rounded-4 mb-3"
+                    >
+                      <div class="order-item center-vertical">
+                        <div
+                          class="img-contain rounded-4 border overflow-hidden me-3"
+                        >
+                          <img src="media/images/producto.webp" alt="" />
+                        </div>
+                        <div>
+                          <h6 class="mb-1">Surtimax es el mejor de la vida</h6>
+                          <p class="mb-0">Some variations for this item</p>
+                        </div>
+                      </div>
+                      <p class="fw-bold">$10.000</p>
+                      <p>01</p>
+                      <p class="fw-bold">$12.000</p>
+                    </div>
+                    <div
+                      class="order-item-container d-grid bg-white rounded-4 mb-3"
+                    >
+                      <div class="order-item center-vertical">
+                        <div
+                          class="img-contain rounded-4 border overflow-hidden me-3"
+                        >
+                          <img src="media/images/producto.webp" alt="" />
+                        </div>
+                        <div>
+                          <h6 class="mb-1">Surtimax es el mejor de la vida</h6>
+                          <p class="mb-0">Some variations for this item</p>
+                        </div>
+                      </div>
+                      <p class="fw-bold">$10.000</p>
+                      <p>01</p>
+                      <p class="fw-bold">$12.000</p>
+                    </div>
+                    <div class="order-item-container d-grid bg-white rounded-4">
+                      <div class="order-item center-vertical">
+                        <div
+                          class="img-contain rounded-4 border overflow-hidden me-3"
+                        >
+                          <img src="media/images/producto.webp" alt="" />
+                        </div>
+                        <div>
+                          <h6 class="mb-1">Surtimax es el mejor de la vida</h6>
+                          <p class="mb-0">Some variations for this item</p>
+                        </div>
+                      </div>
+                      <p class="fw-bold">$10.000</p>
+                      <p>01</p>
+                      <p class="fw-bold">$12.000</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+</html>

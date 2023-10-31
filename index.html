@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio</title>
+    <link rel="stylesheet" href="custom.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header class="py-2 position-fixed">
+      <div class="container">
+        <nav class="center-vertical justify-content-between">
+          <div class="center-vertical">
+            <button class="p-2 rounded-3 bg-white">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-menu-2"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#2c3e50"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M4 6l16 0" />
+                <path d="M4 12l16 0" />
+                <path d="M4 18l16 0" />
+              </svg>
+            </button>
+            <a href="#" class="ms-2 img-contain d-flex logo">
+              <img src="media/images/logo-mibarrio-blanco.png" alt="" />
+            </a>
+          </div>
+          <form
+            action="aa"
+            class="position-relative center-vertical justify-content-between ps-3 pe-1"
+          >
+            <div>
+              <button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-search"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#2c3e50"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                  <path d="M21 21l-6 -6" />
+                </svg>
+              </button>
+              <input
+                class="position-absolute border-0 h-100 w-100 bg-white rounded-4 ps-5"
+                type="search"
+                placeholder="¿Qué estás buscando?"
+                inputmode="search"
+              />
+            </div>
+            <button type="button" class="bg-body-secondary rounded-4 p-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-adjustments"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#2c3e50"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M4 10a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                <path d="M6 4v4" />
+                <path d="M6 12v8" />
+                <path d="M10 16a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                <path d="M12 4v10" />
+                <path d="M12 18v2" />
+                <path d="M16 7a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                <path d="M18 4v1" />
+                <path d="M18 9v11" />
+              </svg>
+            </button>
+          </form>
+          <div class="center-vertical">
+            <div class="text-end me-3 text-white lh-2">
+              <span>Ubicación</span>
+              <p class="mb-0 fw-medium">Calle 35#89-08</p>
+            </div>
+            <button class="rounded-pill center-all p-2 border border-light">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-shopping-cart"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#fff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                <path d="M17 17h-11v-14h-2" />
+                <path d="M6 5l14 1l-1 7h-13" />
+              </svg>
+            </button>
+            <button
+              class="rounded-pill center-all ms-2 p-2 border border-light"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-user"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#fff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+              </svg>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="banner-home overflow-hidden pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 position-relative">
+              <button
+                class="bg-white banner-arrow prev rounded-pill shadow p-2 me-1"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-arrow-left"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M5 12l14 0" />
+                  <path d="M5 12l6 6" />
+                  <path d="M5 12l6 -6" />
+                </svg>
+              </button>
+
+              <div class="swiper banner-slider overflow-visible">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide" data-history="slide1">
+                    <a
+                      href="#"
+                      class="d-flex img-fit overflow-hidden rounded-4"
+                    >
+                      <img src="media/images/pizza-banner.jpg" alt="" />
+                    </a>
+                  </div>
+                  <div class="swiper-slide" data-history="slide2">
+                    <a
+                      href="#"
+                      class="d-flex img-fit overflow-hidden rounded-4"
+                    >
+                      <img src="media/images/market-banner.jpg" alt="" />
+                    </a>
+                  </div>
+                  <div class="swiper-slide" data-history="slide3">
+                    <a
+                      href="#"
+                      class="d-flex img-fit overflow-hidden rounded-4"
+                    >
+                      <img src="media/images/car-banner.jpg" alt="" />
+                    </a>
+                  </div>
+                  <div class="swiper-slide" data-history="slide4">
+                    <a
+                      href="#"
+                      class="d-flex img-fit overflow-hidden rounded-4"
+                    >
+                      <img src="media/images/plomero-banner.jpg" alt="" />
+                    </a>
+                  </div>
+                  <div class="swiper-slide" data-history="slide5">
+                    <a
+                      href="#"
+                      class="d-flex img-fit overflow-hidden rounded-4"
+                    >
+                      <img src="media/images/pizza-banner.jpg" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <button
+                class="bg-white banner-arrow next rounded-pill shadow p-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-arrow-right"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M5 12l14 0" />
+                  <path d="M13 18l6 -6" />
+                  <path d="M13 6l6 6" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="p-0">
+        <div class="container">
+          <div class="swiper categories-slider">
+            <div class="swiper-wrapper">
+              <a href="#" class="swiper-slide cat-card text-center">
+                <div class="bg-secondary p-2 rounded-4 img-fit"></div>
+                <p class="fw-bold mb-0">Restaurante</p>
+              </a>
+
+              <a href="#" class="swiper-slide cat-card text-center">
+                <div class="bg-secondary p-2 rounded-4 img-fit"></div>
+                <p class="fw-bold mb-0">Educación</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 center-vertical justify-content-between">
+              <h5 class="section-title mb-3">Establecimientos populares</h5>
+              <div class="center-vertical mb-3">
+                <a href="#" class="fw-bold me-3">Ver todos</a>
+                <div class="places-arrows">
+                  <button class="bg-white prev rounded-pill p-2 me-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-arrow-left"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M5 12l14 0" />
+                      <path d="M5 12l6 6" />
+                      <path d="M5 12l6 -6" />
+                    </svg>
+                  </button>
+                  <button class="bg-white next rounded-pill p-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-arrow-right"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M5 12l14 0" />
+                      <path d="M13 18l6 -6" />
+                      <path d="M13 6l6 6" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="swiper places-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="local-card">
+                      <a
+                        href="local.html"
+                        class="img-fit overflow-hidden rounded-top-4 d-flex"
+                      >
+                        <img
+                          src="https://images.unsplash.com/photo-1502056247561-73539df36440?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHJlc3RhdXJhbnQlMjBlbnRyYW5jZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                          alt=""
+                        />
+                      </a>
+                      <div
+                        class="bg-white rounded-4 position-relative local-info"
+                      >
+                        <h3>
+                          <a href="local.html" class="d-flex">Cumbia house</a>
+                        </h3>
+                        <label
+                          for="heart"
+                          class="fav-btn rounded-pill center-all position-absolute bg-white"
+                        >
+                          <input id="heart" type="checkbox" class="d-none" />
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-heart"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                              d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+                            />
+                          </svg>
+                        </label>
+                        <div class="d-flex justify-content-between details">
+                          <span class="position-relative"
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="me-1"
+                              width="18"
+                              height="18"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              fill="none"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                stroke="none"
+                                d="M0 0h24v24H0z"
+                                fill="none"
+                              />
+                              <path
+                                d="M3 7l6 -3l6 3l6 -3v13l-6 3l-6 -3l-6 3v-13"
+                              />
+                              <path d="M9 4v13" />
+                              <path d="M15 7v13" />
+                            </svg>
+                            12.3km</span
+                          >
+                          <span class="position-relative"
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="me-1"
+                              width="18"
+                              height="18"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              fill="none"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                stroke="none"
+                                d="M0 0h24v24H0z"
+                                fill="none"
+                              />
+                              <path
+                                d="M3 7l6 -3l6 3l6 -3v13l-6 3l-6 -3l-6 3v-13"
+                              />
+                              <path d="M9 4v13" />
+                              <path d="M15 7v13" />
+                            </svg>
+                            12.3km</span
+                          >
+                          <span class="position-relative"
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="me-1"
+                              width="18"
+                              height="18"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              fill="none"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                stroke="none"
+                                d="M0 0h24v24H0z"
+                                fill="none"
+                              />
+                              <path
+                                d="M3 7l6 -3l6 3l6 -3v13l-6 3l-6 -3l-6 3v-13"
+                              />
+                              <path d="M9 4v13" />
+                              <path d="M15 7v13" />
+                            </svg>
+                            12.3km</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="local-card">
+                      <a
+                        href="local.html"
+                        class="img-fit overflow-hidden rounded-top-4 d-flex"
+                      >
+                        <img
+                          src="https://images.unsplash.com/photo-1502056247561-73539df36440?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHJlc3RhdXJhbnQlMjBlbnRyYW5jZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                          alt=""
+                        />
+                      </a>
+                      <div
+                        class="bg-white rounded-4 position-relative local-info"
+                      >
+                        <h3>
+                          <a href="local.html" class="d-flex">Cumbia house</a>
+                        </h3>
+                        <label
+                          for="heart"
+                          class="fav-btn rounded-pill center-all position-absolute bg-white"
+                        >
+                          <input id="heart" type="checkbox" class="d-none" />
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-heart"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                              d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+                            />
+                          </svg>
+                        </label>
+                        <div class="d-flex justify-content-between details">
+                          <span class="position-relative"
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="me-1"
+                              width="18"
+                              height="18"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              fill="none"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                stroke="none"
+                                d="M0 0h24v24H0z"
+                                fill="none"
+                              />
+                              <path
+                                d="M3 7l6 -3l6 3l6 -3v13l-6 3l-6 -3l-6 3v-13"
+                              />
+                              <path d="M9 4v13" />
+                              <path d="M15 7v13" />
+                            </svg>
+                            12.3km</span
+                          >
+                          <span class="position-relative"
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="me-1"
+                              width="18"
+                              height="18"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              fill="none"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                stroke="none"
+                                d="M0 0h24v24H0z"
+                                fill="none"
+                              />
+                              <path
+                                d="M3 7l6 -3l6 3l6 -3v13l-6 3l-6 -3l-6 3v-13"
+                              />
+                              <path d="M9 4v13" />
+                              <path d="M15 7v13" />
+                            </svg>
+                            12.3km</span
+                          >
+                          <span class="position-relative"
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="me-1"
+                              width="18"
+                              height="18"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              fill="none"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                stroke="none"
+                                d="M0 0h24v24H0z"
+                                fill="none"
+                              />
+                              <path
+                                d="M3 7l6 -3l6 3l6 -3v13l-6 3l-6 -3l-6 3v-13"
+                              />
+                              <path d="M9 4v13" />
+                              <path d="M15 7v13" />
+                            </svg>
+                            12.3km</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+</html>
