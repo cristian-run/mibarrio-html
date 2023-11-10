@@ -35,3 +35,31 @@
     padding: 2px 12px;
     border-radius: 6px;
 }
+
+
+.locations-list{
+    .location-item{
+        border-top: 1px solid #ccc;
+        padding: 15px 10px;
+        &:last-child{
+            border-bottom: 1px solid #ccc;
+        }
+        input{
+            width: 30px;
+            height: 30px;
+            appearance: none;
+            border: 1px solid #aaa;
+            margin-right: 12px;
+            &:checked{
+                border: 8px solid $primary;
+            }
+        }
+        label{
+            cursor: pointer;
+        }
+        span{
+            font-size: 14px;
+            // color: #aaa;
+        }
+    }
+}

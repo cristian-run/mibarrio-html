@@ -1,13 +1,13 @@
 const bannerSwiper = new Swiper(".banner-slider", {
   loop: true,
-  loopedSlides: 2,
+  loopAdditionalSlides: 2,
   slidesPerView: 2,
   spaceBetween: 24,
   navigation: {
     nextEl: ".banner-arrow.next",
     prevEl: ".banner-arrow.prev",
   },
-  watchOverflow: true,  
+  // watchOverflow: true,  
   // centeredSlides: true,
   // centerInsufficientSlides: true,
   //   history: {

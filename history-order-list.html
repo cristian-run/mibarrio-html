@@ -97,7 +97,7 @@
             </button>
           </form>
           <div class="center-vertical">
-            <div class="text-end me-3 text-white lh-2">
+            <div class="text-end me-3 text-white lh-2" style="cursor: pointer;" data-fancybox data-src="#location-modal">
               <span>Ubicación</span>
               <p class="mb-0 fw-medium">Calle 35#89-08</p>
             </div>
@@ -121,7 +121,8 @@
                 <path d="M6 5l14 1l-1 7h-13" />
               </svg>
             </button>
-            <button
+            <div class="submenu-type position-relative">
+              <button
               class="rounded-pill center-all ms-2 p-2 border border-light"
             >
               <svg
@@ -141,12 +142,58 @@
                 <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
               </svg>
             </button>
+            <div class="submenu-container position-absolute">
+              <div class="submenu bg-white rounded-3 p-3">
+                  <a href="#" class="submenu-link center-vertical">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="me-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                      <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                      <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                    </svg>
+                    Mi cuenta
+                  </a>
+                  <a href="history-order-list.html" class="submenu-link center-vertical">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="me-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                      <path d="M8 3h8a2 2 0 0 1 2 2v1.82a5 5 0 0 0 .528 2.236l.944 1.888a5 5 0 0 1 .528 2.236v5.82a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-5.82a5 5 0 0 1 .528 -2.236l1.472 -2.944v-3a2 2 0 0 1 2 -2z" />
+                      <path d="M14 15m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                      <path d="M6 21a2 2 0 0 0 2 -2v-5.82a5 5 0 0 0 -.528 -2.236l-1.472 -2.944" />
+                      <path d="M11 7h2" />
+                    </svg>
+                    Mis pedidos
+                  </a>
+                  <a href="#" class="submenu-link center-vertical">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="me-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                      <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                      <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                      <path d="M15 15l3.35 3.35" />
+                      <path d="M9 15l-3.35 3.35" />
+                      <path d="M5.65 5.65l3.35 3.35" />
+                      <path d="M18.35 5.65l-3.35 3.35" />
+                    </svg>
+                    Ayuda
+                  </a>
+                  <hr>
+                  <a href="#" class="submenu-link center-vertical">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="me-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                      <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" />
+                      <path d="M9 12h12l-3 -3" />
+                      <path d="M18 15l3 -3" />
+                    </svg>
+                    Cerrar sesión
+                  </a>
+              </div>
+            </div>
+            </div>
+          
           </div>
         </nav>
       </div>
     </header>
     <main>
-      <section id="orders-history">
+      <section id="orders-history" class="pt-5">
         <div class="container">
           <div class="center-vertical justify-content-between mb-4">
             <h4 class="page-title ">Lista de pedidos</h4>
@@ -296,7 +343,7 @@
                 </button>
               </div>
             </div>
-            <div class="order-sumary-container ">
+            <div class="order-sumary-container">
               <div class="row p-4 m-0">
                 <div class="col-md-10 m-auto">
                   <div class="order-sumary">

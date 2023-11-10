@@ -16,20 +16,22 @@
     .price{
         font-size: 22px;
     }
-    .product-amount{
-        border: 1px solid #ccc;
-        width: 140px;
-        input{
-            border: none;
-            width: 100%;
+    
+}
+
+.product-amount{
+    border: 1px solid #ccc;
+    width: 140px;
+    input{
+        border: none;
+        width: 100%;
+    }
+    button{
+        &:hover{
+            background: #eee;
         }
-        button{
-            &:hover{
-                background: #eee;
-            }
-            &:active{
-                background: #ccc;
-            }
+        &:active{
+            background: #ccc;
         }
     }
 }

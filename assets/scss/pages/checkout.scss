@@ -1,0 +1,24 @@
+.order-sumary{
+    position: sticky;
+    top: 85px;
+    .local-name{
+        font-size: 18px;
+    }
+    .total{
+        font-size: 20px;
+    }
+}
+
+.checkout-order-header{
+    .img-fit{
+        width: 150px;
+        min-width: 150px;
+        aspect-ratio: 1/0.62;
+    }
+}
+
+.checkout-order{
+    .order-item-container, .order-sumary-head{
+        grid-template-columns: 52% 1fr 1fr 42px;
+    }
+}

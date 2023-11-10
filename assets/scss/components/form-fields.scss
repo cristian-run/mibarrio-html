@@ -5,9 +5,14 @@
     font-size: 17px;
     position: relative;
   }
+  svg{
+    left: 12px;
+    top: 12px;
+  }
   input {
-    height: 46px;
-    border: 1px solid #dddddd;
+    height: 48px;
+    border: 1px solid #aaa;
+    border-radius: 10px;
     &::placeholder{
         color: #8E8E8E;
     }

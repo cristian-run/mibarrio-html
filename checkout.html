@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local</title>
+    <link rel="stylesheet" href="custom.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.24/dist/carousel/carousel.thumbs.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+  </head>
+  <body>
+    <header class="py-2 position-fixed">
+      <div class="container">
+        <nav class="center-vertical justify-content-between">
+          <div class="center-vertical">
+            <button class="p-2 rounded-3 bg-white">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-menu-2"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#2c3e50"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M4 6l16 0" />
+                <path d="M4 12l16 0" />
+                <path d="M4 18l16 0" />
+              </svg>
+            </button>
+            <a href="index.html" class="ms-2 img-contain d-flex logo">
+              <img src="media/images/logo-mibarrio-blanco.png" alt="" />
+            </a>
+          </div>
+          <form
+            action="aa"
+            class="position-relative center-vertical justify-content-between ps-3 pe-1"
+          >
+            <div>
+              <button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-search"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#2c3e50"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                  <path d="M21 21l-6 -6" />
+                </svg>
+              </button>
+              <input
+                class="position-absolute border-0 h-100 w-100 bg-white rounded-4 ps-5"
+                type="search"
+                placeholder="¿Qué estás buscando?"
+                inputmode="search"
+              />
+            </div>
+            <button type="button" class="bg-body-secondary rounded-4 p-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-adjustments"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#2c3e50"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M4 10a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                <path d="M6 4v4" />
+                <path d="M6 12v8" />
+                <path d="M10 16a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                <path d="M12 4v10" />
+                <path d="M12 18v2" />
+                <path d="M16 7a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                <path d="M18 4v1" />
+                <path d="M18 9v11" />
+              </svg>
+            </button>
+          </form>
+          <div class="center-vertical">
+            <div class="text-end me-3 text-white lh-2" style="cursor: pointer;" data-fancybox data-src="#location-modal">
+              <span>Ubicación</span>
+              <p class="mb-0 fw-medium">Calle 35#89-08</p>
+            </div>
+            <button class="rounded-pill center-all p-2 border border-light">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-shopping-cart"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#fff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                <path d="M17 17h-11v-14h-2" />
+                <path d="M6 5l14 1l-1 7h-13" />
+              </svg>
+            </button>
+            <div class="submenu-type position-relative">
+              <button
+              class="rounded-pill center-all ms-2 p-2 border border-light"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-user"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#fff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+              </svg>
+            </button>
+            <div class="submenu-container position-absolute">
+              <div class="submenu bg-white rounded-3 p-3">
+                  <a href="#" class="submenu-link center-vertical">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="me-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                      <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                      <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                    </svg>
+                    Mi cuenta
+                  </a>
+                  <a href="history-order-list.html" class="submenu-link center-vertical">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="me-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                      <path d="M8 3h8a2 2 0 0 1 2 2v1.82a5 5 0 0 0 .528 2.236l.944 1.888a5 5 0 0 1 .528 2.236v5.82a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-5.82a5 5 0 0 1 .528 -2.236l1.472 -2.944v-3a2 2 0 0 1 2 -2z" />
+                      <path d="M14 15m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                      <path d="M6 21a2 2 0 0 0 2 -2v-5.82a5 5 0 0 0 -.528 -2.236l-1.472 -2.944" />
+                      <path d="M11 7h2" />
+                    </svg>
+                    Mis pedidos
+                  </a>
+                  <a href="#" class="submenu-link center-vertical">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="me-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                      <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                      <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                      <path d="M15 15l3.35 3.35" />
+                      <path d="M9 15l-3.35 3.35" />
+                      <path d="M5.65 5.65l3.35 3.35" />
+                      <path d="M18.35 5.65l-3.35 3.35" />
+                    </svg>
+                    Ayuda
+                  </a>
+                  <hr>
+                  <a href="#" class="submenu-link center-vertical">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="me-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                      <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" />
+                      <path d="M9 12h12l-3 -3" />
+                      <path d="M18 15l3 -3" />
+                    </svg>
+                    Cerrar sesión
+                  </a>
+              </div>
+            </div>
+            </div>
+          
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="pt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="pb-4 border-bottom border-secondary-subtle mb-5">
+                <h4 class="page-title mb-4">Mi pedido</h4>
+                <div class="">
+                  <div
+                    class="bg-white center-vertical rounded-4 checkout-order-header"
+                  >
+                    <div class="img-fit me-3">
+                      <img
+                        class="rounded-4"
+                        src="https://images.unsplash.com/photo-1502056247561-73539df36440?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHJlc3RhdXJhbnQlMjBlbnRyYW5jZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      class="p-2 pe-4 center-vertical justify-content-between w-100"
+                    >
+                      <div>
+                        <h5 class="fw-bold mb-1">Nombre del local</h5>
+                        <p class="mb-0">Barranquilla, Cl. 30 # 13c-57</p>
+                      </div>
+
+                      <div
+                        class="center-all py-2 px-4 fw-bold bg-body-secondary rounded-pill"
+                      >
+                        3 items
+                      </div>
+                    </div>
+                  </div>
+                  <div class="order-sumary-container checkout-order">
+                    <div class="row p-4 m-0">
+                      <div class="col-md-12 m-auto">
+                        <div class="order-sumary">
+                          <div class="order-sumary-head d-grid px-3">
+                            <p>Producto</p>
+                            <p>Cantidad</p>
+                            <p>Precio</p>
+                            <p></p>
+                          </div>
+                          <div
+                            class="order-item-container d-grid bg-white rounded-4 mb-3"
+                          >
+                            <div class="order-item center-vertical pe-2">
+                              <div
+                                class="img-contain rounded-4 border overflow-hidden me-3"
+                              >
+                                <img src="media/images/producto.webp" alt="" />
+                              </div>
+                              <div>
+                                <h6 class="mb-1">
+                                  Surtimax es el mejor de la vida
+                                </h6>
+                                <p class="mb-0">
+                                  Some variations for this item
+                                </p>
+                              </div>
+                            </div>
+
+                            <div class="product-amount center-all rounded-2">
+                              <button class="p-2 rounded-2">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  class="icon icon-tabler icon-tabler-minus"
+                                  width="26"
+                                  height="26"
+                                  viewBox="0 0 24 24"
+                                  stroke-width="2"
+                                  stroke="currentColor"
+                                  fill="none"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                >
+                                  <path
+                                    stroke="none"
+                                    d="M0 0h24v24H0z"
+                                    fill="none"
+                                  />
+                                  <path d="M5 12l14 0" />
+                                </svg>
+                              </button>
+                              <input
+                                type="text"
+                                value="01"
+                                readonly
+                                class="text-center h-100"
+                              />
+                              <button class="p-2 rounded-2">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  class="icon icon-tabler icon-tabler-plus"
+                                  width="26"
+                                  height="26"
+                                  viewBox="0 0 24 24"
+                                  stroke-width="2"
+                                  stroke="currentColor"
+                                  fill="none"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                >
+                                  <path
+                                    stroke="none"
+                                    d="M0 0h24v24H0z"
+                                    fill="none"
+                                  />
+                                  <path d="M12 5l0 14" />
+                                  <path d="M5 12l14 0" />
+                                </svg>
+                              </button>
+                            </div>
+                            <p class="fw-bold">$12.000</p>
+                            <button
+                              class="bg-body-secondary rounded-pill p-1 m-auto"
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="icon icon-tabler icon-tabler-x"
+                                width="26"
+                                height="26"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                fill="none"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              >
+                                <path
+                                  stroke="none"
+                                  d="M0 0h24v24H0z"
+                                  fill="none"
+                                />
+                                <path d="M18 6l-12 12" />
+                                <path d="M6 6l12 12" />
+                              </svg>
+                            </button>
+                          </div>
+                          <div
+                            class="order-item-container d-grid bg-white rounded-4 mb-3"
+                          >
+                            <div class="order-item center-vertical pe-2">
+                              <div
+                                class="img-contain rounded-4 border overflow-hidden me-3"
+                              >
+                                <img src="media/images/producto.webp" alt="" />
+                              </div>
+                              <div>
+                                <h6 class="mb-1">
+                                  Surtimax es el mejor de la vida
+                                </h6>
+                                <p class="mb-0">
+                                  Some variations for this item
+                                </p>
+                              </div>
+                            </div>
+
+                            <div class="product-amount center-all rounded-2">
+                              <button class="p-2 rounded-2">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  class="icon icon-tabler icon-tabler-minus"
+                                  width="26"
+                                  height="26"
+                                  viewBox="0 0 24 24"
+                                  stroke-width="2"
+                                  stroke="currentColor"
+                                  fill="none"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                >
+                                  <path
+                                    stroke="none"
+                                    d="M0 0h24v24H0z"
+                                    fill="none"
+                                  />
+                                  <path d="M5 12l14 0" />
+                                </svg>
+                              </button>
+                              <input
+                                type="text"
+                                value="01"
+                                readonly
+                                class="text-center h-100"
+                              />
+                              <button class="p-2 rounded-2">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  class="icon icon-tabler icon-tabler-plus"
+                                  width="26"
+                                  height="26"
+                                  viewBox="0 0 24 24"
+                                  stroke-width="2"
+                                  stroke="currentColor"
+                                  fill="none"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                >
+                                  <path
+                                    stroke="none"
+                                    d="M0 0h24v24H0z"
+                                    fill="none"
+                                  />
+                                  <path d="M12 5l0 14" />
+                                  <path d="M5 12l14 0" />
+                                </svg>
+                              </button>
+                            </div>
+                            <p class="fw-bold">$12.000</p>
+                            <button
+                              class="bg-body-secondary rounded-pill p-1 m-auto"
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="icon icon-tabler icon-tabler-x"
+                                width="26"
+                                height="26"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                fill="none"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              >
+                                <path
+                                  stroke="none"
+                                  d="M0 0h24v24H0z"
+                                  fill="none"
+                                />
+                                <path d="M18 6l-12 12" />
+                                <path d="M6 6l12 12" />
+                              </svg>
+                            </button>
+                          </div>
+                          <div
+                            class="order-item-container d-grid bg-white rounded-4 mb-3"
+                          >
+                            <div class="order-item center-vertical pe-2">
+                              <div
+                                class="img-contain rounded-4 border overflow-hidden me-3"
+                              >
+                                <img src="media/images/producto.webp" alt="" />
+                              </div>
+                              <div>
+                                <h6 class="mb-1">
+                                  Surtimax es el mejor de la vida
+                                </h6>
+                                <p class="mb-0">
+                                  Some variations for this item
+                                </p>
+                              </div>
+                            </div>
+
+                            <div class="product-amount center-all rounded-2">
+                              <button class="p-2 rounded-2">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  class="icon icon-tabler icon-tabler-minus"
+                                  width="26"
+                                  height="26"
+                                  viewBox="0 0 24 24"
+                                  stroke-width="2"
+                                  stroke="currentColor"
+                                  fill="none"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                >
+                                  <path
+                                    stroke="none"
+                                    d="M0 0h24v24H0z"
+                                    fill="none"
+                                  />
+                                  <path d="M5 12l14 0" />
+                                </svg>
+                              </button>
+                              <input
+                                type="text"
+                                value="01"
+                                readonly
+                                class="text-center h-100"
+                              />
+                              <button class="p-2 rounded-2">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  class="icon icon-tabler icon-tabler-plus"
+                                  width="26"
+                                  height="26"
+                                  viewBox="0 0 24 24"
+                                  stroke-width="2"
+                                  stroke="currentColor"
+                                  fill="none"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                >
+                                  <path
+                                    stroke="none"
+                                    d="M0 0h24v24H0z"
+                                    fill="none"
+                                  />
+                                  <path d="M12 5l0 14" />
+                                  <path d="M5 12l14 0" />
+                                </svg>
+                              </button>
+                            </div>
+                            <p class="fw-bold">$12.000</p>
+                            <button
+                              class="bg-body-secondary rounded-pill p-1 m-auto"
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="icon icon-tabler icon-tabler-x"
+                                width="26"
+                                height="26"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                fill="none"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              >
+                                <path
+                                  stroke="none"
+                                  d="M0 0h24v24H0z"
+                                  fill="none"
+                                />
+                                <path d="M18 6l-12 12" />
+                                <path d="M6 6l12 12" />
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="r">
+                <h4 class="page-title mb-4">Detalles de facturación</h4>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form_field mb-4">
+                      <input
+                        type="text"
+                        class="w-100 px-3 border-0"
+                        required
+                        placeholder="Escribe tus nombres"
+                      />
+                      <label for="" class="fw-bold">Nombre</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form_field mb-4">
+                      <input
+                        type="text"
+                        class="w-100 px-3 border-0"
+                        required
+                        placeholder="Escribe tus apellidos"
+                      />
+                      <label for="" class="fw-bold">Apellidos</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form_field mb-4">
+                      <input
+                        type="email"
+                        class="w-100 px-3 border-0"
+                        required
+                        placeholder="Escribe tu email"
+                      />
+                      <label for="" class="fw-bold">Email</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form_field mb-4">
+                      <input
+                        type="tel"
+                        class="w-100 px-3 border-0"
+                        required
+                        placeholder="Escribe tu teléfono"
+                      />
+                      <label for="" class="fw-bold">Teléfono</label>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form_field mb-4">
+                      <input
+                        type="text"
+                        class="w-100 px-3 border-0"
+                        required
+                        placeholder="Escribe la dirección"
+                      />
+                      <label for="" class="fw-bold">Dirección de entrega</label>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form_field mb-4">
+                      <textarea
+                        class="w-100 p-3 border-0"
+                        placeholder="Deja un mensaje"
+                        name=""
+                        id=""
+                        cols="30"
+                        rows="4"
+                      ></textarea>
+
+                      <label for="" class="fw-bold"
+                        >Indicaciones adicionales</label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 ps-5">
+              <div class="bg-white p-4 rounded-4 order-sumary">
+                <h6 class="section-title mb-3">Total del pedido</h6>
+                <div
+                  class="bg-body-secondary local-name p-2 text-center rounded-3 fw-bold mb-3"
+                >
+                  Nombre del local
+                </div>
+                <div class="mb-2">
+                  <div class="center-vertical justify-content-between py-1">
+                    <span>Subtotal</span>
+                    <p class="mb-0 fw-bold">$25.000</p>
+                  </div>
+                  <div class="center-vertical justify-content-between py-1">
+                    <span>Subtotal</span>
+                    <p class="mb-0 fw-bold">$25.000</p>
+                  </div>
+                  <div class="center-vertical justify-content-between py-1">
+                    <span>Subtotal</span>
+                    <p class="mb-0 fw-bold">$25.000</p>
+                  </div>
+                  <hr class="my-1" />
+                  <hr class="my-1 mb-2" />
+                  <div class="center-vertical justify-content-between total">
+                    <span class="fw-bold">Gran total</span>
+                    <p class="mb-0 fw-bold">$27.000</p>
+                  </div>
+                </div>
+
+                <button class="mib-btn primary w-100">Realizar pedido</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
